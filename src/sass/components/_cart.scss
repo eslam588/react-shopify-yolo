@@ -12,7 +12,8 @@
         padding: 20px;
         box-shadow: $box-shadow;
         position: sticky;
-        top : calc(#{header-shrink-height} + 20px);
+        // top : calc(#{header-shrink-height} + 20px);
+        top : 90px;
 
         @include mobile {
             width: 100%;

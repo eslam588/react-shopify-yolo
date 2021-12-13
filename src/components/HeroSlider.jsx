@@ -104,7 +104,7 @@ const HeroSliderItem = props => (
                            animate={true}
                            
                     >
-                        xem chi tiết
+                        See details
                     </Button>
                 </Link>
             </div>

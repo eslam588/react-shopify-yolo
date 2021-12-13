@@ -50,7 +50,7 @@ const Home = () => {
                 
                 <Section>
                     <SectionTitle>
-                          Products
+                          <h3 className="main-title">Products</h3>
                     </SectionTitle>
                     <SectionBody>
                     <Grid
@@ -81,7 +81,7 @@ const Home = () => {
                {/* new arrival section */}
                <Section>
                     <SectionTitle>
-                          Sales Products
+                          <h3 className="main-title">Sales Products</h3>
                     </SectionTitle>
                     <SectionBody>
                     <Grid
@@ -122,7 +122,7 @@ const Home = () => {
                 {/* popular product section */}
                <Section>
                     <SectionTitle>
-                          Popular Products
+                          <h3 className="main-title">Popular Products</h3>
                     </SectionTitle>
                     <SectionBody>
                     <Grid

@@ -91,13 +91,21 @@ img{
     min-height: 100vh;
 
     @include tablet {
-        margin-top : calc(#{header-tablet-height} + 20px)
+        margin-top : calc(#{header-tablet-height} + 20px);
     }
     @include mobile {
-        margin-top : calc(#{header-tablet-height} + 10px)
+        margin-top : calc(#{header-tablet-height} + 10px);
     }
 }
 
 .grid{
     display:grid;
+}
+
+
+.main-title {
+    color:rgb(40, 47, 133);
+    display: inline;
+    border-bottom: 2px solid rgb(15, 11, 243);
+    border-radius: 10px;
 }

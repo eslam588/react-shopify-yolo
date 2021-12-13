@@ -5,38 +5,38 @@ import logo from '../assets/images/Logo-2.png';
 
 const footerAboutLinks = [
     {
-        display: "Giới thiệu",
+        display: "Introduce",
         path: "/about"
     },
     {
-        display: "Liên hệ",
+        display: "Contact",
         path: "/about"
     },
     {
-        display: "Tuyển dụng",
+        display: "Recruitment",
         path: "/about"
     },
     {
-        display: "Tin tức",
+        display: "News",
         path: "/about"
     },
     {
-        display: "Hệ thống cửa hàng",
+        display: "Shop system",
         path: "/about"
     }
 ]
 
 const footerCustomerLinks = [
     {
-        display: "Chính sách đổi trả",
+        display: "Return Policy",
         path: "/about"
     },
     {
-        display: "Chính sách bảo hành",
+        display: "Warranty Policy",
         path: "/about"
     },
     {
-        display: "Chính sách hoàn tiền",
+        display: "Refund Policy",
         path: "/about"
     }
 ]
@@ -52,23 +52,23 @@ const Footer = () => {
                 >
                     <div>
                         <div className="footer__title">
-                            Tổng đài hỗ trợ
+                        Support call center
                         </div>
                         <div className="footer__content">
                             <p>
-                                Liên hệ đặt hàng <strong>0123456789</strong>
+                            Contact to order <strong>0123456789</strong>
                             </p>
                             <p>
-                                Thắc mắc đơn hàng <strong>0123456789</strong>
+                            Order problems<strong>0123456789</strong>
                             </p>
                             <p>
-                                Góp ý, khiếu nại <strong>0123456789</strong>
+                            Comments, complaints <strong>0123456789</strong>
                             </p>
                         </div>
                     </div>
                     <div>
                         <div className="footer__title">
-                            Về Yolo
+                        About Yolo
                         </div>
                         <div className="footer__content">
                             {
@@ -84,7 +84,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="footer__title">
-                            Chăm sóc khách hàng
+                           Customer care
                         </div>
                         <div className="footer__content">
                             {
@@ -105,7 +105,7 @@ const Footer = () => {
                             </Link>
                         </p>
                         <p>
-                            Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống năng động, tích cực hơn.
+                        Towards the goal of bringing new joy of dressing every day to millions of Vietnamese consumers. Let's work with Yolo towards a more active and positive life.
                         </p>
                     </div>
                 </Grid>

@@ -25,7 +25,7 @@ const Product = props => {
             </Section>
             <Section>
                 <SectionTitle>
-                    Related Products
+                    <h3 className="main-title">Related Products</h3>
                 </SectionTitle>
                 <SectionBody>
                 <Grid

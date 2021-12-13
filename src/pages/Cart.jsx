@@ -1,4 +1,4 @@
-import React ,{useEffect , useState} from 'react'
+import React ,{useEffect , useState} from 'react';
 import Helmet from '../components/Helmet';
 import {useSelector} from 'react-redux';
 import productData from '../assets/fake-data/products';
@@ -18,7 +18,7 @@ const Cart = () => {
     const [totalPrice , settotalPrice] = useState(0);
 
 
-    // console.log(productData.getCartItemsDetail(productData))
+   console.log(productData.getCartItemsDetail(productData))
 
     useEffect(() => {
         setcartProducts(productData.getCartItemsDetail(cartItems))
@@ -31,15 +31,15 @@ const Cart = () => {
                 <div className="cart__info">
                     <div className="cart__info__txt">
                         <p>
-                            fsvfbthuyn{totalProducts}
+                            products in cart :   {totalProducts}
                         </p>
                         <div className="cart__info__txt__price">
-                            <span>uhuhhuihi</span>
+                            <span>Total price</span>
                             <span>{numberWithCommas(totalPrice)}</span>
                         </div>
                     </div>
                     <div className="cart__info__btn">
-                        <Button size="block">gk hjhk</Button>
+                        <Button size="block">buy</Button>
                         <Link to="/catalog">
                              <Button size="block">Go To Catalog</Button>
                         </Link>
@@ -48,7 +48,7 @@ const Cart = () => {
                 <div className="cart__list">
                     {
                         cartProducts.map((item , index) => (
-                            <CartItem key={index} item={item} />
+                             <CartItem key={index} item={item} />
                         ))
                     }
                 </div>

@@ -1,16 +1,16 @@
-import React , {useState ,useEffect} from 'react'
-import PropTypes from 'prop-types'
+import React , {useState , useEffect , useRef} from 'react';
+import PropTypes from 'prop-types';
 
-import {useDispatch} from 'react-redux';
-import {updateItem , removeItem } from '../redux/shopping-cart/cartItemsSlice';
+import { useDispatch } from 'react-redux';
+import { updateItem , removeItem } from '../redux/shopping-cart/cartItemsSlice';
 import numberWithCommas from '../utils/numberWithCommas';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const CartItem = props => {
 
     const dispatch = useDispatch();
-
+    const itemRef = useRef(null);
     const [item , setItem] = useState(props.item);
     const [quantity , setQuantity] = useState(props.item.quantity);
 
@@ -34,9 +34,12 @@ const CartItem = props => {
     const removeCartItem = () => {
         dispatch(removeItem(item))
     }
+
+
+    
     return (
 
-        <div className="cart__item">
+        <div className="cart__item" ref={itemRef} >
             <div className="cart__item__image">
                 <img src={item.product.image01}  alt="" />
             </div>

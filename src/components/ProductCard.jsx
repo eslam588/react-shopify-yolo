@@ -33,7 +33,7 @@ const ProductCard = props => {
                      animate={true}
                      onClick={() => dispatch(set(props.slug))}
                 >
-                    cho bg
+                    details
                 </Button>
             </div>    
         </div>
